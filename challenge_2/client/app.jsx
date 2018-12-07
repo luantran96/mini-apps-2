@@ -10,7 +10,7 @@ class App extends React.Component {
           data: undefined,
         });
 
-        this.renderChart = this.renderChart.bind(this);
+      this.renderChart = this.renderChart.bind(this);
     }
     
     componentDidMount() {
@@ -44,6 +44,8 @@ class App extends React.Component {
         data: {
             labels: dates,
             datasets: [{
+                fill: false,
+                lineTension: 2,
                 label: 'Bitcoin prices',
                 data: prices,
                 borderColor: [
@@ -57,10 +59,9 @@ class App extends React.Component {
                 yAxes: [{
                     ticks: {
                         beginAtZero:true
-                    }
+                    },
                 }]
             },
-            lineTension: 2,
         },
       });
     }
