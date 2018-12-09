@@ -1,0 +1,14 @@
+.main {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.allFrames {
+    display: flex;
+}
+
+.frame {
+    font-size: 20px;
+    margin: 10px; 
+    width: 50px; 
+}
